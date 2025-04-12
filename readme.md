@@ -1,6 +1,6 @@
-# Sticker Management System
+# Python Sticker Maker
 
-The Sticker Management System is a Python-based tool designed to simplify the creation of custom stickers. It allows users to add borders, shadows, and padding to images, with customizable options for colors, transparency, and cropping.
+Python Sticker Maker is a tool for creating custom stickers from images with options for borders, shadows, and background customization.
 
 ## Sample Usage
 ```python
