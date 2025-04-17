@@ -2,7 +2,7 @@
 
 Python Sticker Maker is a tool for creating custom stickers from images with options for borders, shadows, and background customization.
 
-[![Watch the video](images/screenshot3)](https://www.loom.com/share/6325bcbb706e49b4966d17066782e675)
+[![Watch the video](images/screenshot3.png)](https://www.loom.com/share/6325bcbb706e49b4966d17066782e675)
 
 ## Sample Usage
 ```python
