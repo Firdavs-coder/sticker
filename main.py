@@ -1,4 +1,5 @@
 from PIL import Image, ImageFilter, ImageChops
+from pathlib import Path
 
 class StickerMaker:
     def __init__(
@@ -106,10 +107,26 @@ class StickerMaker:
         final_img = self.make_sticker(input_path)
         final_img.save(output_path, format="PNG")
 
+def process_sticker(image_path: Path):
+    """
+    Process the uploaded image and convert it to a sticker format
+    Args:
+        image_path: Path to the uploaded image
+    Returns:
+        Path to the processed sticker
+    """
+    with Image.open(image_path) as img:
+        # Add your sticker processing logic here
+        # For example: resize, add effects, etc.
+        processed = img.copy()
+        return image_path
+
+# You can add more processing functions here
+
 if __name__ == "__main__":
     sticker = StickerMaker(
-            alpha_threshold=10,
-            border_size=16,
+            alpha_threshold=100,
+            border_size=12,
             border_color=(255, 255, 255, 255),
             shadow_size=0,
             shadow_color=(0, 0, 0),
@@ -120,6 +137,6 @@ if __name__ == "__main__":
             bg_transparent=False,
             crop=False
         ).process(
-        input_path="images/image3.png", 
-        output_path="outputs/image3.png"
+        input_path="images/image5.png", 
+        output_path="outputs/image5.png"
     )

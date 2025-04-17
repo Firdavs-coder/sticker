@@ -22,11 +22,26 @@ sticker = StickerMaker(
 )
 ```
 
+
 ## Image Comparison Table
 
 | Original Image       | Output Image         |
 |-----------------------|----------------------|
 | ![Original](images/image1.png) | ![Output](outputs/image1.png) |
-| ![Original](images/image2.png) | ![Output](outputs/image2.png) |
 | ![Original](images/image3.png) | ![Output](outputs/image3.png) |
 | ![Original](images/image4.png) | ![Output](outputs/image4.png) |
+| ![Original](images/image5.png) | ![Output](outputs/image5.png) |
+
+## API
+
+To use the API, navigate to the `api` folder and run the following command:
+
+```bash
+cd api
+uvicorn api:app
+```
+
+This will start the API server, allowing you to interact with the Sticker Maker tool programmatically.
+
+![Screenshot 1](images/screenshot1.png)
+![Screenshot 2](images/screenshot2.png)
